@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulator Button</title>
+  <style>
+    /* Add any custom styles here */
+    #messageBox {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      width: 380px;
+      height: 290px;
+      margin: 250px;
+    }
+    .bg9{
+      border:5px solid black;
+      width: 220px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+<div class="bg9">
+<button id="turnButton">Turn On</button>
+<button id="turnButton1">Turn Off</button>
+</div>
+<div id="messageBox"></div>
+
+<script>
+  // Your simulator function
+  function startSimulator() {
+    // Get the message box element
+    var messageBox = document.getElementById("messageBox");
+
+
+   
+
+
+
+
+
+
+
+    // Update the content of the message box
+    messageBox.innerHTML += "Simulator started!<br>";
+  }
+
+  // Event listener for the button click
+  document.getElementById("turnButton").addEventListener("click", startSimulator);
+
+
+
+
+  function stopSimulator() {
+    // Get the message box element
+    var messageBox = document.getElementById("messageBox");
+
+    // Update the content of the message box
+    messageBox.innerHTML += "Simulator stoped!<br>";
+  }
+
+  // Event listener for the button click
+  document.getElementById("turnButton1").addEventListener("click", stopSimulator);
+</script>
+
+</body>
+</html>
